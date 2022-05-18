@@ -1,0 +1,242 @@
+#vision{
+    width: 100%;
+    padding: 5% 0;
+    background-image: url(../photo/bg_02.png);
+    .box{
+        border: 3px dashed #FF0000;
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        margin: 15px 0;
+        img{
+            margin: 20px 0;
+            padding: 35px;
+            border-radius: 15px;
+        }
+        #icon-1{
+            background-color: #FFF9DD;
+        }
+        #icon-2{
+            background-color: #FFE6E2;
+        }
+        #icon-3{
+            background-color: #E3F8FA;
+        }
+        h2{
+            color: black;
+            font-weight: bold;
+            font-size: 28px;
+            margin: 20px 0;
+        }
+        p{
+            color: rgb(80, 79, 79);
+            font-size: 20px;
+        }
+    }
+}
+
+#benefits{
+    width: 100%;
+    padding: 10% 0;
+    .drone{
+        .box-img{
+            overflow: hidden;
+            img{
+                transform: scale(1);
+                transition: 0.3s ease-in;                
+            } 
+            &:hover{
+                img{
+                transform: scale(1.1);
+                
+                }
+            }           
+        }
+        .box-text{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: left;
+            h1{
+                font-size: 2.8em;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+            p{
+                font-size: 20px;
+            }
+            a{
+                background-color: #FF0000;
+                padding: 15px 50px;
+                display: inline-block;
+                text-decoration: none;
+                border-radius: 50px;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                margin: 15px 0;
+                position: relative;
+                z-index: 5;
+                &:hover{
+                    &::after{
+                        width: 100%;
+                        left: 0%;
+                        transition: 0.4s ease-out;
+                    }
+                }
+                &::after{
+                    content: "";
+                    width: 0%;
+                    height: 100%;
+                    position: absolute;
+                    right: 0%;
+                    top: 0%;
+                    transition: all 0.3s ease-in-out;
+                    background-color: #e52929;
+                    border-radius: 50px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+#video{
+    width: 100%;
+    background-image: url(../photo/bg_03.png);
+    padding: 7% 0;
+    .gallery{
+        width: 100%;
+        .video-boxes{
+            width: 100%;
+            .box-img{
+                width: 100%;
+                height: 588px;
+                padding: 0 5px;
+                position: relative;
+                border-radius: 8px;
+                &:first-child{
+                    background-image: url(../photo/image_2.jpg);                
+                }
+                &:nth-child(2){
+                    background-image: url(../photo/image_3.jpg);
+                }
+                &:nth-child(3){
+                    background-image: url(../photo/image_4.jpg);
+                }
+                &:last-child{
+                    background-image: url(../photo/image_3.jpg);
+                }                
+            }
+            .box-video{
+                width: 70px;
+                height: 70px;
+                border: 1px solid #FF0000;
+                position: absolute;
+                left: 55%;
+                bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;   
+                z-index: 1;             
+                a{
+                    padding: 15px 20px;
+                    color: white;
+                    text-decoration: none;
+                    background-color: #FF0000;
+                    display: inline-block;
+
+                }
+            }
+        }
+        .box-text{
+            width: 100%;
+            padding: 7% 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: left;
+            color: white;
+            h1{
+                font-size: 3.8em;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+            p{
+                font-size: 20px;
+            }
+            a{
+                background-color: #FF0000;
+                padding: 15px 50px;
+                display: inline-block;
+                text-decoration: none;
+                border-radius: 50px;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                margin: 15px 0;
+                position: relative;
+                z-index: 5;
+                &:hover{
+                    &::after{
+                        width: 100%;
+                        left: 0%;
+                        transition: 0.4s ease-out;
+                    }
+                }
+                &::after{
+                    content: "";
+                    width: 0%;
+                    height: 100%;
+                    position: absolute;
+                    right: 0%;
+                    top: 0%;
+                    transition: all 0.3s ease-in-out;
+                    background-color: #e52929;
+                    border-radius: 50px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// responsive start
+
+@media (min-width: 576px){
+    #vision{
+        .box{
+            img{
+                padding: 25px;
+            }
+            h2{
+                font-size: 28px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    #benefits{
+        .drone{
+            .box-img{ 
+                margin-bottom: 15px;           
+            }
+            .box-text{
+                h1{
+                    font-size: 2em;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    #video{
+
+    }
+}
